@@ -9,6 +9,8 @@ body{
   display: none;
 }
 
+/*Mobile starts*/
+
 @media (max-width:480px) {
   .mobile-only{
     display:block;
@@ -31,9 +33,9 @@ body{
   position: fixed;
   bottom: 0;
   height: 60px;
-  width: 92.6%;
+  width: 92%;
   display: flex;
-  padding: 5px;
+  padding: 5.5px;
   margin-bottom: 10px;
   border-radius: 20px;
   justify-content: space-around;
@@ -54,10 +56,6 @@ body{
   .mobile-nav {
   display: none;
   }
-}
-
-#header2 h2{
-  text-align: center;
 }
 
 .btn1 a{
@@ -86,7 +84,7 @@ body{
 .gallery-mob {
   margin: 8px;
   float: left;
-  width: 42.5%;
+  width: 43.5%;
   border-radius: 20px;
   transition: 1s;
   background-color: rgba(57, 53, 53, 0.354);
@@ -105,12 +103,99 @@ body{
   pointer-events: none;
 }
 
+.about-us-1{
+  height: 62vh;
+  width: 100%;
+  padding: 4px 0;
+  margin-bottom: 5px;
+  background: linear-gradient(45deg,rgb(157, 1, 1), #50000a, #110092, #003d50, #0a001a, #014705);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+.about-us-1 .pic{
+  height: 260px;
+  width:  86.5%;
+  margin: 20px;
+  border-radius: 20px;
+  border: 0.5px solid rgba(98, 91, 91, 0.833);
+}
+.about1{
+  width: 1130px;
+  height: 26vh;
+  max-width: 85%;
+  margin: 0 auto;
+  /*background: rgba(41, 36, 51, 0.863);
+  color: #fff;
+  border-radius: 40px;
+  border: 1px solid rgba(76, 76, 76, 0.822);*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text1{
+  width: 440px;
+}
+.text1 h5{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 3px;
+  text-align: center;
+}
+span{
+  color: #4070f4;
+}
+.text1 p{
+  font-size: 14px;
+  line-height: 25px;
+  text-align: justify;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  padding: 6px;
+  border: 1px solid #474646;
+  background-image: linear-gradient(to bottom, #54515168, #413f3f84);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  float: left;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 39.8%;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.hire:hover{
+  color: #fff;
+  border: 1px solid rgb(62, 1, 228);
+  background: rgb(50, 8, 165);
+  box-shadow: 0 0 10px rgb(50, 8, 165), 0 0 40px rgb(50, 8, 165), 0 0 80px rgb(50, 8, 165);
+}
+
 #top1{
     color: transparent;
-    margin-bottom: 5px;
+    margin-bottom: none;
     user-select: none;
   }
 }
+
+/*Mobile ends*/
 
 ::selection{
   background-color: rgb(50, 8, 165);
@@ -197,7 +282,7 @@ body{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #0f003dd9;
+  background-color: #0d032ddf;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -226,35 +311,94 @@ body{
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.about-us{
+  height: 65vh;
+  width: 100%;
+  padding: 40px 0;
+  margin-bottom: 5px;
+  background: linear-gradient(45deg,rgb(157, 1, 1), #50000a, #110092, #003d50, #0a001a, #014705);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
 }
 
-.react{
-    height: 260px;
-    padding: 60px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    background-color: #29253ab7;
-    color: #fff;
-    border-radius: 10px;
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
 
-.react .info p{
+.about .pic{
+  height: 250px;
+  width:  250px;
+  border-radius: 20px;
+  border: 0.5px solid rgba(98, 91, 91, 0.769);
+}
+.about{
+  width: 1130px;
+  height: 64vh;
+  max-width: 85%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background: rgba(41, 36, 51, 0.863);
+  color: #fff;
+  border-radius: 40px;
+  border: 1px solid rgba(76, 76, 76, 0.822);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h5{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  padding: 6px;
+  border: 1px solid #474646;
+  background-image: linear-gradient(to bottom, #54515168, #413f3f84);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
   float: left;
-  width: 50%;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 39.8%;
+  font-weight: 500;
+  transition: 0.5s;
 }
-
-.react .front img{
-  float: right;
-  width: 20%;
+.hire:hover{
+  color: #fff;
+  border: 1px solid rgb(62, 1, 228);
+  background: rgb(50, 8, 165);
+  box-shadow: 0 0 10px rgb(50, 8, 165), 0 0 40px rgb(50, 8, 165), 0 0 80px rgb(50, 8, 165);
 }
 
   #top{
     color: transparent;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     user-select: none;
   }
 
@@ -390,6 +534,94 @@ div.gallery img {
   background: rgb(255, 0, 0);
   box-shadow: 0 0 10px rgb(255, 0, 0), 0 0 40px rgb(255, 0, 0), 0 0 80px rgb(255, 0, 0);
 } 
+
+.footer{
+  padding: 40px 0;
+  margin-top: 30px;
+}
+
+.footer-cover{
+  padding: 10px;
+  border-top: 1px solid rgba(174, 162, 162, 0.925);
+  height: 20vh;
+  background-color: #000000b4;
+}
+
+.footer .space{
+  color: transparent;
+  cursor: none;
+  user-select: none;
+}
+
+.footer .social{
+  text-align: center;
+  color: #7a7f84;
+}
+
+.footer .social a{
+  font-size: 24px;
+  color: inherit;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover{
+  opacity: 0.9;
+  color: #fff;
+}
+
+.ending-part{
+  height: 30px;
+  padding: 2px;
+  margin-top: 15px;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ending-part .end-A{
+  padding-left: 16px;
+  width: 100%;
+}
+
+.ending-part .end-A p{
+  text-decoration: none;
+  font-weight: 200;
+  color: #fff;
+}
+
+.ending-part .end-A span a{
+  text-decoration: none;
+  color: rgb(0, 128, 255);
+}
+
+.ending-part .end-B{
+  width: 98%;
+  padding-right: 20px;
+  text-align: right;
+}
+
+ul#menu li {
+  display:inline;
+  margin-left: 40px;
+}
+
+li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+}
+
+li a:hover{
+  border-bottom: 1px solid white;
+}
+
+
 
     
 
